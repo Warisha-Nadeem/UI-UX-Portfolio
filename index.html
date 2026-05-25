@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Warisha Nadeem — UI/UX Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">WN<span class="logo-dot">✦</span></div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#contact" class="nav__cta">Let's Talk ✨</a></li>
+    </ul>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mob-close" id="mobClose">✕</button>
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#projects" class="mob-link">Work</a></li>
+      <li><a href="#process" class="mob-link">Process</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="blob blob--peach"></div>
+    <div class="blob blob--mint"></div>
+    <div class="blob blob--yellow"></div>
+    <div class="blob blob--pink"></div>
+
+    <div class="hero__content">
+      <div class="sparkle-group" aria-hidden="true">
+        <span class="sp sp-1">✦</span>
+        <span class="sp sp-2">✿</span>
+        <span class="sp sp-3">◌</span>
+        <span class="sp sp-4">✦</span>
+      </div>
+
+      <p class="hero__eyebrow reveal">Hello, I'm</p>
+      <h1 class="hero__name reveal delay-1">
+        Warisha<br/>
+        <span class="hero__name--italic">Nadeem</span>
+        <span class="hero__emoji" aria-hidden="true">✨</span>
+      </h1>
+
+      <div class="hero__pill reveal delay-2">UI/UX Designer</div>
+
+      <p class="hero__tagline reveal delay-3">
+        I craft digital experiences that feel<br class="br-desktop"/>
+        <em>warm, intuitive, and beautifully human.</em>
+      </p>
+
+      <div class="hero__actions reveal delay-4">
+        <a href="#projects" class="btn btn--primary">View My Work →</a>
+        <a href="#contact" class="btn btn--soft">Say Hello 👋</a>
+      </div>
+
+      <div class="hero__floating-pills reveal delay-4" aria-hidden="true">
+        <span class="fpill">Figma</span>
+        <span class="fpill">Flutter</span>
+        <span class="fpill">UX Research</span>
+      </div>
+    </div>
+
+    <!-- Decorative side illustration -->
+    <div class="hero__illustration reveal delay-2" aria-hidden="true">
+      <div class="illus-card illus-card--1">
+        <div class="illus-dot illus-dot--purple"></div>
+        <div class="illus-lines">
+          <div class="ill-line"></div>
+          <div class="ill-line short"></div>
+        </div>
+      </div>
+      <div class="illus-card illus-card--2">
+        <div class="illus-ring"></div>
+        <div class="illus-dot illus-dot--peach" style="margin-top:8px"></div>
+      </div>
+      <div class="illus-card illus-card--3">
+        <div class="illus-lines">
+          <div class="ill-line"></div>
+          <div class="ill-line medium"></div>
+          <div class="ill-line short"></div>
+        </div>
+      </div>
+      <div class="illus-avatar">
+        <span class="avatar-emoji">🎨</span>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <div class="scroll-dot"></div>
+      <span>Scroll down</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-tag reveal">/ About Me</div>
+      <div class="about__grid">
+        <div class="about__left">
+          <h2 class="section-heading reveal">
+            Designing with<br/>
+            <span class="heading-italic">heart &amp; craft.</span>
+          </h2>
+          <p class="about__bio reveal delay-1">
+            I'm Warisha — a UI/UX Designer who believes great design is both beautiful and purposeful. I work across the full design journey, from empathy research to pixel-perfect handoff.
+          </p>
+          <p class="about__bio reveal delay-2">
+            When I'm not designing, I'm exploring new apps, sketching interface ideas, or diving deep into design systems and accessibility.
+          </p>
+          <div class="about__badges reveal delay-3">
+            <span class="badge badge--peach">Final Year Student</span>
+            <span class="badge badge--mint">Open to Work ✓</span>
+            <span class="badge badge--blush">Freelance Available</span>
+          </div>
+        </div>
+
+        <div class="about__right">
+          <h3 class="skills-heading reveal">My Toolkit</h3>
+          <ul class="skills-list">
+            <li class="skill-item reveal" style="--i:0">
+              <div class="skill-top">
+                <span class="skill-name">Figma</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="--w:95%"></div></div>
+            </li>
+            <li class="skill-item reveal" style="--i:1">
+              <div class="skill-top">
+                <span class="skill-name">Flutter</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="--w:80%"></div></div>
+            </li>
+            <li class="skill-item reveal" style="--i:2">
+              <div class="skill-top">
+                <span class="skill-name">UX Research</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="--w:88%"></div></div>
+            </li>
+            <li class="skill-item reveal" style="--i:3">
+              <div class="skill-top">
+                <span class="skill-name">Prototyping</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="--w:92%"></div></div>
+            </li>
+            <li class="skill-item reveal" style="--i:4">
+              <div class="skill-top">
+                <span class="skill-name">HTML &amp; CSS</span>
+                <span class="skill-pct">84%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" style="--w:84%"></div></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-tag reveal">/ Selected Work</div>
+      <h2 class="section-heading reveal">
+        Projects I'm<br/>
+        <span class="heading-italic">proud of.</span>
+      </h2>
+      <p class="section-sub reveal delay-1">Click any card to explore the full project details ↓</p>
+
+      <div class="projects__grid">
+
+        <!-- Card 1: Fitness -->
+        <article class="pcard reveal" data-project="fitness" tabindex="0" role="button" aria-expanded="false">
+          <div class="pcard__thumb pcard__thumb--fitness">
+            <img class="project-cover" src="https://img.magnific.com/premium-vector/this-illustration-highlights-various-elements-associated-with-fitness-exercise_73637-1223.jpg?semt=ais_hybrid&w=740&q=80" alt="Fitness app UI showcase">
+            <div class="project-overlay"></div>
+            <div class="pcard__mock" style="display:none">
+              <div class="pm-screen pm-screen--fitness">
+                <div class="pm-topbar"></div>
+                <div class="pm-ring-wrap"><div class="pm-ring"></div></div>
+                <div class="pm-lineset">
+                  <div class="pm-line"></div>
+                  <div class="pm-line pm-line--short"></div>
+                </div>
+                <div class="pm-chips">
+                  <div class="pm-chip"></div>
+                  <div class="pm-chip"></div>
+                  <div class="pm-chip"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pcard__badge">FYP</div>
+          </div>
+          <div class="pcard__body">
+            <div class="pcard__meta">
+              <span class="pcard__num">01</span>
+              <span class="pcard__category">Mobile App</span>
+            </div>
+            <h3 class="pcard__title">Fitness Workout App</h3>
+            <p class="pcard__desc">A personalized fitness tracker with gamified motivation and progress analytics.</p>
+            <div class="pcard__tags">
+              <span>Flutter</span><span>Figma</span><span>UX Research</span>
+            </div>
+            <div class="pcard__cta">
+              <span class="cta-text">View Details</span>
+              <span class="cta-arrow">→</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Notes -->
+        <article class="pcard reveal delay-1" data-project="notes" tabindex="0" role="button" aria-expanded="false">
+          <div class="pcard__thumb pcard__thumb--notes">
+            <img class="project-cover" src="https://cdni.iconscout.com/illustration/premium/thumb/notes-highlighter-illustration-svg-download-png-8362572.png" alt="Notes app design">
+            <div class="project-overlay"></div>
+            <div class="pcard__mock" style="display:none">
+              <div class="pm-screen pm-screen--notes">
+                <div class="pm-topbar pm-topbar--mint"></div>
+                <div class="pm-note-block"></div>
+                <div class="pm-note-block pm-note-block--slim"></div>
+                <div class="pm-note-block pm-note-block--slim"></div>
+                <div class="pm-fab"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pcard__body">
+            <div class="pcard__meta">
+              <span class="pcard__num">02</span>
+              <span class="pcard__category">Mobile App</span>
+            </div>
+            <h3 class="pcard__title">Notes App</h3>
+            <p class="pcard__desc">A clean, Firebase-powered note-taking app with real-time sync and rich text.</p>
+            <div class="pcard__tags">
+              <span>Firebase</span><span>Flutter</span><span>Figma</span>
+            </div>
+            <div class="pcard__cta">
+              <span class="cta-text">View Details</span>
+              <span class="cta-arrow">→</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Islamic -->
+        <article class="pcard reveal delay-2" data-project="islamic" tabindex="0" role="button" aria-expanded="false">
+          <div class="pcard__thumb pcard__thumb--islamic">
+            <img class="project-cover" src="https://img.magnific.com/premium-vector/line-art-illustration-muslim-man-praying-front-mosque-symbolizing-ramadan-islamic_146120-2281.jpg?semt=ais_hybrid&w=740&q=80" alt="Islamic app design">
+            <div class="project-overlay"></div>
+            <div class="pcard__mock" style="display:none">
+              <div class="pm-screen pm-screen--islamic">
+                <div class="pm-topbar pm-topbar--gold"></div>
+                <div class="pm-arch-wrap"><div class="pm-arch"></div></div>
+                <div class="pm-lineset">
+                  <div class="pm-line pm-line--gold"></div>
+                  <div class="pm-line pm-line--gold pm-line--short"></div>
+                </div>
+                <div class="pm-prayer-list">
+                  <div class="pm-prayer"></div>
+                  <div class="pm-prayer"></div>
+                  <div class="pm-prayer"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pcard__body">
+            <div class="pcard__meta">
+              <span class="pcard__num">03</span>
+              <span class="pcard__category">Mobile App</span>
+            </div>
+            <h3 class="pcard__title">Islamic App</h3>
+            <p class="pcard__desc">Quran reader + prayer times with Arabic typography and a spiritually designed UI.</p>
+            <div class="pcard__tags">
+              <span>Flutter</span><span>Figma</span><span>Arabic UI</span>
+            </div>
+            <div class="pcard__cta">
+              <span class="cta-text">View Details</span>
+              <span class="cta-arrow">→</span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects__grid -->
+    </div>
+
+    <!-- ===== PROJECT DETAIL PANELS ===== -->
+
+    <!-- Fitness Detail -->
+    <div class="project-detail" id="detail-fitness" aria-hidden="true">
+      <div class="container">
+        <button class="detail-close" data-project="fitness">✕ Close</button>
+        <div class="detail-inner">
+          <div class="detail-left">
+            <div class="detail-num">01</div>
+            <h3 class="detail-title">Fitness Workout App</h3>
+            <p class="detail-sub">Final Year Project — A full-featured fitness companion built in Flutter.</p>
+            <div class="detail-section">
+              <h4>Overview</h4>
+              <p>A comprehensive mobile fitness app designed to make workout tracking engaging and habit-forming. The app personalizes plans based on user goals and celebrates progress with a gamified system.</p>
+            </div>
+            <div class="detail-section">
+              <h4>Key Features</h4>
+              <ul class="detail-features">
+                <li>✦ Personalized workout plan generator</li>
+                <li>✦ Animated progress rings &amp; streaks</li>
+                <li>✦ Exercise library with illustrations</li>
+                <li>✦ Weekly / monthly analytics dashboard</li>
+                <li>✦ Custom onboarding for new users</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Tools Used</h4>
+              <div class="detail-tools">
+                <span>Figma</span><span>Flutter</span><span>Dart</span>
+                <span>UX Research</span><span>Prototyping</span>
+              </div>
+            </div>
+          </div>
+          <div class="detail-right">
+            <div class="detail-gallery">
+              <img src="assets/fitess_home.jpeg" alt="Fitness app dashboard">
+              <img src="assets/workout.jpeg" alt="Workout day">
+            </div>
+            <div class="detail-screens" style="display:none">
+              <div class="ds-screen ds-screen--1 ds-fitness">
+                <div class="dss-bar"></div>
+                <div class="dss-ring-big"></div>
+                <div class="dss-label"></div>
+                <div class="dss-cards">
+                  <div class="dss-card"></div>
+                  <div class="dss-card"></div>
+                </div>
+              </div>
+              <div class="ds-screen ds-screen--2 ds-fitness">
+                <div class="dss-bar"></div>
+                <div class="dss-list">
+                  <div class="dss-row"></div>
+                  <div class="dss-row"></div>
+                  <div class="dss-row"></div>
+                </div>
+              </div>
+            </div>
+            <p class="detail-screens-caption">↑ High-fidelity UI — Figma prototype</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notes Detail -->
+    <div class="project-detail" id="detail-notes" aria-hidden="true">
+      <div class="container">
+        <button class="detail-close" data-project="notes">✕ Close</button>
+        <div class="detail-inner">
+          <div class="detail-left">
+            <div class="detail-num">02</div>
+            <h3 class="detail-title">Notes App</h3>
+            <p class="detail-sub">A minimal, Firebase-powered note-taking experience.</p>
+            <div class="detail-section">
+              <h4>Overview</h4>
+              <p>Built for focus and simplicity, this notes app syncs in real-time via Firebase. The UI strips away distractions so you can capture thoughts instantly, then organise them with tags and folders.</p>
+            </div>
+            <div class="detail-section">
+              <h4>Key Features</h4>
+              <ul class="detail-features">
+                <li>✦ Real-time Firebase Firestore sync</li>
+                <li>✦ Rich text editing (bold, italic, lists)</li>
+                <li>✦ Color-coded note categories</li>
+                <li>✦ Search &amp; filter functionality</li>
+                <li>✦ Offline-first architecture</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Tools Used</h4>
+              <div class="detail-tools">
+                <span>Figma</span><span>Flutter</span>
+                <span>Firebase</span><span>Firestore</span><span>Auth</span>
+              </div>
+            </div>
+          </div>
+          <div class="detail-right">
+            <div class="detail-gallery">
+              <img src="assets/notes.png" alt="Notes app ui">
+              <img src="assets/voice.png" alt="Wireframe sketches">
+            </div>
+            <div class="detail-screens" style="display:none">
+              <div class="ds-screen ds-screen--1 ds-notes">
+                <div class="dss-bar dss-bar--mint"></div>
+                <div class="dss-note-big"></div>
+                <div class="dss-note-slim"></div>
+                <div class="dss-note-slim"></div>
+              </div>
+              <div class="ds-screen ds-screen--2 ds-notes">
+                <div class="dss-bar dss-bar--mint"></div>
+                <div class="dss-fab-screen"></div>
+                <div class="dss-list">
+                  <div class="dss-row dss-row--mint"></div>
+                  <div class="dss-row dss-row--mint"></div>
+                </div>
+              </div>
+            </div>
+            <p class="detail-screens-caption">↑ UI mockups — clean minimal interface</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Islamic Detail -->
+    <div class="project-detail" id="detail-islamic" aria-hidden="true">
+      <div class="container">
+        <button class="detail-close" data-project="islamic">✕ Close</button>
+        <div class="detail-inner">
+          <div class="detail-left">
+            <div class="detail-num">03</div>
+            <h3 class="detail-title">Islamic App</h3>
+            <p class="detail-sub">Quran reader &amp; daily prayer companion.</p>
+            <div class="detail-section">
+              <h4>Overview</h4>
+              <p>An all-in-one Islamic lifestyle app featuring a full Quran reader with Arabic typography, accurate prayer times based on GPS location, a Qibla compass, and daily dua reminders.</p>
+            </div>
+            <div class="detail-section">
+              <h4>Key Features</h4>
+              <ul class="detail-features">
+                <li>✦ Full Quran with Arabic &amp; translation</li>
+                <li>✦ GPS-based prayer time alerts</li>
+                <li>✦ Qibla compass</li>
+                <li>✦ Daily duas &amp; 99 Names of Allah</li>
+                <li>✦ Elegant Arabic type system</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Tools Used</h4>
+              <div class="detail-tools">
+                <span>Figma</span><span>Flutter</span>
+                <span>Quran API</span><span>GPS</span>
+              </div>
+            </div>
+          </div>
+          <div class="detail-right">
+            <div class="detail-gallery">
+              <img src="assets/surah.png" alt="Islamic app ui">
+              <img src="assets/quran.png" alt="Prayer app wireframe">
+            </div>
+            <div class="detail-screens" style="display:none">
+              <div class="ds-screen ds-screen--1 ds-islamic">
+                <div class="dss-bar dss-bar--gold"></div>
+                <div class="dss-arch-big"></div>
+                <div class="dss-label dss-label--gold"></div>
+              </div>
+              <div class="ds-screen ds-screen--2 ds-islamic">
+                <div class="dss-bar dss-bar--gold"></div>
+                <div class="dss-list">
+                  <div class="dss-row dss-row--gold"></div>
+                  <div class="dss-row dss-row--gold"></div>
+                  <div class="dss-row dss-row--gold"></div>
+                </div>
+              </div>
+            </div>
+            <p class="detail-screens-caption">↑ Spiritually inspired UI — Figma</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- /projects -->
+
+  <!-- ========== DESIGN PROCESS ========== -->
+  <section class="process section" id="process">
+    <div class="container">
+      <div class="section-tag reveal">/ Design Process</div>
+      <h2 class="section-heading reveal">
+        How I bring ideas<br/>
+        <span class="heading-italic">to life.</span>
+      </h2>
+      <p class="section-sub reveal delay-1">A peek inside my design workflow — from rough sketches to polished pixels.</p>
+
+      <div class="process-phases reveal delay-1">
+        <div class="phase-step"><div class="phase-icon">🔍</div><div class="phase-name">Research</div></div>
+        <div class="phase-arrow">→</div>
+        <div class="phase-step"><div class="phase-icon">✏️</div><div class="phase-name">Wireframe</div></div>
+        <div class="phase-arrow">→</div>
+        <div class="phase-step"><div class="phase-icon">🎨</div><div class="phase-name">Visual Design</div></div>
+        <div class="phase-arrow">→</div>
+        <div class="phase-step"><div class="phase-icon">🧪</div><div class="phase-name">Prototype &amp; Test</div></div>
+        <div class="phase-arrow">→</div>
+        <div class="phase-step"><div class="phase-icon">🚀</div><div class="phase-name">Deliver</div></div>
+      </div>
+
+      <div class="showcase-grid">
+
+        <div class="showcase-item reveal" style="--delay:0s">
+          <div class="showcase-img showcase-img--wf1">
+            <img class="showcase-real" src="https://miro.medium.com/v2/resize:fit:1400/1*55WQ8WPny_YXNJtdKMJmpQ.png" alt="Fitness wireframe">
+            <div class="showcase-label-badge">Wireframe</div>
+          </div>
+          <div class="showcase-caption">
+            <strong>Low-Fi Wireframe</strong>
+            <span>Early-stage paper sketches focusing purely on structural hierarchy and initial layout ideas</span>
+          </div>
+        </div>
+
+        <div class="showcase-item reveal" style="--delay:0.2s">
+          <div class="showcase-img showcase-img--wf2">
+            <img class="showcase-real" src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200&auto=format&fit=crop" alt="Notes wireframe">
+            <div class="showcase-label-badge">Wireframe</div>
+          </div>
+          <div class="showcase-caption">
+            <strong>Wireframe Sketch</strong>
+            <span> Adding visual weight and foundational layout details to bridge the gap between ideas and high-fidelity UI </span>
+          </div>
+        </div>
+
+        <div class="showcase-item reveal" style="--delay:0.3s">
+          <div class="showcase-img showcase-img--ui2">
+            <img class="showcase-real" src="https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/25ce5514ee2b1378274c65b48ef0d61e5841695a" alt="Notes UI">
+            <div class="showcase-label-badge" showcase-label-badge--color>Final UI</div>
+          </div>
+          <div class="showcase-caption">
+            <strong>Final UI Screen</strong>
+            <span>The final production-ready interface showing pixel-perfect components and a cohesive visual identity</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="mini-case section">
+    <div class="container">
+      <div class="section-tag reveal">/ Extra Showcase</div>
+      <h2 class="section-heading reveal">Behind the <span class="heading-italic">design process.</span></h2>
+      <div class="case-grid">
+        <div class="case-card reveal">
+          <img src="https://cdn.sanity.io/images/599r6htc/regionalized/9c515a08e808a13caf57a2e3c49ac7ab5acf486d-1440x850.jpg?w=1440&h=850&q=75&fit=max&auto=format" alt="Moodboard">
+          <h4>Moodboards & Research</h4>
+          <p>Collecting inspiration, colors, typography and user insights before visual design.</p>
+        </div>
+        <div class="case-card reveal delay-1">
+          <img src="https://appsnado.com/blog/wp-content/uploads/2023/08/Apps-Nado-Blog-Post-002.jpg" alt="Prototype">
+          <h4>Interactive Prototypes</h4>
+          <p>Creating high-fidelity flows and interactions in Figma for testing and feedback.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <div class="stats-strip">
+    <div class="stat-item reveal">
+      <div class="stat-num" data-count="3">3<span>+</span></div>
+      <div class="stat-label">Projects Shipped</div>
+    </div>
+    <div class="stat-item reveal delay-1">
+      <div class="stat-num" data-count="100">100<span>%</span></div>
+      <div class="stat-label">User-Centered Design</div>
+    </div>
+    <div class="stat-item reveal delay-2">
+      <div class="stat-num" data-count="6">6<span>+</span></div>
+      <div class="stat-label">Tools Mastered</div>
+    </div>
+    <div class="stat-item reveal delay-3">
+      <div class="stat-num">∞</div>
+      <div class="stat-label">Design Curiosity</div>
+    </div>
+  </div>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-tag reveal">/ Contact</div>
+      <div class="contact__inner">
+        <div class="contact__left">
+          <h2 class="contact__heading reveal">
+            Let's create<br/>something<br/>
+            <span class="heading-italic">wonderful.</span>
+            <span class="contact-sparkle">✨</span>
+          </h2>
+        </div>
+        <div class="contact__right">
+          <p class="contact__sub reveal delay-1">Have a project, collab, or just want to say hi? I'd love to hear from you. My inbox is always open!</p>
+          <a href="mailto:warishanadeem7860@gmail.com" class="contact__email reveal delay-2">warishanadeem7860@gmail.com</a>
+          <div class="contact__socials reveal delay-3">
+            <a href="#" class="social-pill">Behance ↗</a>
+            <a href="#" class="social-pill">Dribbble ↗</a>
+            <a href="https://www.linkedin.com/in/warisha-nadeem-123450366" class="social-pill">LinkedIn ↗</a>
+          </div>
+          <a href="assets/cv.pdf" class="btn btn--primary contact__btn reveal delay-3">Download CV 📄</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__left">© 2025 Warisha Nadeem ✦</div>
+    <div class="footer__center">Designed with care &amp; coffee ☕</div>
+    <div class="footer__right">UI/UX Designer</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
